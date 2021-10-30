@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Alam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <style>
+        :root {
+            --ion-safe-area-top: 20px;
+            --ion-safe-area-bottom: 22px;
+        }
+    </style>
+    <script type="module">
+        import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.menuController = menuController;
+    </script>
+</head>
+
+<body>
+    <ion-app>
+        <ion-menu side="start" content-id="main-content">
+            <ion-header>
+                <ion-toolbar translucent>
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-item>
+                        <ion-button id="proyectos">
+                            <ion-icon  name="code-outline" slot="start" ></ion-icon>
+                            <ion-label>PAGINA PRINCIPAL</ion-label>
+                        </ion-button>
+                    </ion-item>
+                    <ion-item>
+                        <ion-button id="contactame">
+                            <ion-icon name="logo-whatsapp" slot="start"></ion-icon>
+                            <ion-label>CONTACTAME</ion-label>
+                        </ion-button>
+                    </ion-item>
+
+
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+
+        <div class="ion-page" id="main-content">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons slot="start">
+                        <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>Danish Alam</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+
+            <ion-content>
+                <div class="ion-page" id="main-content">
+                    <ion-content class="ion-padding">
+                      
+                    </ion-content>
+                </div>
+                <ion-card>
+                    <img id="img" src="./img/impresora-multifuncional-epson-ecotank-l3110-negro.jpg" />
+                    <ion-card-header>
+                        <ion-card-subtitle>CONTROL DE IMPRESORA</ion-card-subtitle>
+                        <ion-card-title>PROYECTO IOT</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                       CONTROL DE IMPRESORA SIN USO DE DRIVERS
+                    </ion-card-content>
+                </ion-card>
+                <ion-card>
+                    <img id="img" src="./img/..." />
+                    <ion-card-header>
+                        <ion-card-subtitle>PROYECTO IOT</ion-card-subtitle>
+                        <ion-card-title>SERVIDOR</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                       CONTROL DE IMPRESORA SIN USO DE DRIVERS
+                    </ion-card-content>
+                </ion-card>
+                <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+                    <ion-fab-button>
+                        <ion-icon name="add"></ion-icon>
+                    </ion-fab-button>
+                    <ion-fab-list>
+                        <ion-fab-button color="light">
+                            <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+                        </ion-fab-button>
+                        <ion-fab-button color="light">
+                            <ion-icon name="logo-twitter" id="twitter"></ion-icon>
+                        </ion-fab-button>
+                        <ion-fab-button color="light">
+                            <ion-icon name="logo-github" id="github"></ion-icon>
+                        </ion-fab-button>
+                    </ion-fab-list>
+                </ion-fab>
+            </ion-content>
+    </ion-app>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script>
+        async function openMenu() {
+            await menuController.open();
+        }
+    </script>
+    <script src="APP1.js"></script>
+</body>
+
+</html>
